@@ -1,0 +1,405 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+
+% \usepackage{fontspec}
+% \setsansfont{DejaVu Sans}
+% \setmainfont{DejaVu Serif}
+% \setmonofont{DejaVu Sans Mono}
+\usepackage[russian]{babel}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{makecell}
+
+\usetheme[progressbar=frametitle,numbering=fraction]{metropolis}
+\usecolortheme{default}
+
+\definecolor{accent}{RGB}{24,64,96}
+\definecolor{accentlight}{RGB}{232,241,247}
+\definecolor{textgray}{RGB}{35,35,35}
+
+\setbeamercolor{normal text}{fg=textgray,bg=white}
+\setbeamercolor{structure}{fg=accent}
+\setbeamercolor{alerted text}{fg=accent}
+\setbeamercolor{palette primary}{fg=white,bg=accent}
+\setbeamercolor{frametitle}{fg=white,bg=accent}
+\setbeamercolor{title}{fg=accent,bg=white}
+\setbeamercolor{subtitle}{fg=textgray,bg=white}
+\setbeamercolor{block title}{fg=white,bg=accent}
+\setbeamercolor{block body}{fg=textgray,bg=accentlight}
+\setbeamercolor{progress bar}{fg=accent,bg=accentlight}
+\setbeamercolor{section title}{fg=accent,bg=white}
+\setbeamerfont{title}{series=\bfseries}
+\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+
+\newcommand{\smallgap}{\vspace{0.35em}}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\title[РПД: Java-разработка для систем ИИ]{Рабочая программа дисциплины\\«Java-разработка для систем искусственного интеллекта: ООП и обработка данных»}
+\subtitle{обновление курса ООП в логике компетентностно-ролевой модели: Java, ETL, БД, многопоточность и ИИ-инструменты}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Логика обновления дисциплины}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.54\textwidth}
+\textbf{Актуальность программы}
+\begin{itemize}
+  \item ООП остаётся фундаментом промышленной разработки, но само по себе уже не закрывает профильные задачи ИИ-направления.
+  \item Для ИИ-систем критичны надёжная серверная разработка, работа с данными, интеграция с БД и воспроизводимые пайплайны обработки.
+  \item ИИ-ассистенты становятся повседневным инструментом разработчика, поэтому нужны навыки промптинга и критической проверки кода.
+\end{itemize}
+\end{column}
+\begin{column}{0.42\textwidth}
+\textbf{Что добавлено к классическому ООП}
+\begin{itemize}
+  \item Java/JVM-стек: коллекции, generics, исключения, I/O.
+  \item Многопоточность: \texttt{Thread}, \texttt{ExecutorService}, \texttt{Future}.
+  \item JDBC, транзакции, DAO, HikariCP.
+  \item ETL: Extract--Transform--Load, идемпотентность, логирование.
+  \item Промпт-инжиниринг и code review результатов ИИ.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Цель и задачи дисциплины}
+\small
+\textbf{Цель:} сформировать у студентов системные компетенции в области промышленной Java-разработки для создания надёжного, масштабируемого и поддерживаемого серверного ПО и ETL-решений с осознанным применением ИИ-инструментов.
+
+\smallgap
+\textbf{Задачи дисциплины}
+\begin{enumerate}
+  \item Освоить ООП-парадигму: классы, инкапсуляцию, наследование, полиморфизм, интерфейсы.
+  \item Научиться разрабатывать прикладные решения на Java с использованием коллекций, generics, исключений, файлового ввода-вывода и библиотек.
+  \item Сформировать базовые навыки многопоточного программирования и взаимодействия с реляционными БД через JDBC.
+  \item Реализовать простой ETL-пайплайн с обработкой ошибок, логированием, метриками и идемпотентной загрузкой.
+  \item Научиться применять GigaChat для генерации, рефакторинга и проверки кода без потери инженерного контроля.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Место дисциплины в образовательной траектории}
+\small
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\textbf{Пререквизиты}
+\begin{itemize}
+  \item Основы программирования: переменные, типы, условия, циклы, функции, массивы.
+  \item Алгоритмы и структуры данных: списки, множества, отображения, поиск/сортировка, Big O.
+  \item Дискретная математика: логика, множества, комбинаторика.
+  \item Базы данных: реляционная модель, SQL DDL/DML, транзакции, ACID, индексы, нормализация.
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Постреквизиты}
+\begin{itemize}
+  \item Инженерия данных и ETL-процессы.
+  \item Технологии больших данных, потоковая обработка.
+  \item Бэкенд-сервисы для ИИ, микросервисная архитектура.
+  \item Интеграция LLM в приложения, тестирование ПО.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Связь с КРМ: компетенции и индикаторы}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.78\textheight, center}
+\begin{tabular}{L{2.8cm} L{4.2cm} L{5.5cm} L{4.2cm}}
+\toprule
+\textbf{Компетенция} & \textbf{Формулировка компетенции} & \textbf{Индикаторы} & \textbf{Базовый уровень} \\
+\midrule
+\textbf{PL-2 Java/Scala/Kotlin} &
+Способен применять JVM-совместимые языки программирования для решения задач в области ИИ &
+\textbf{PL-2.1.} Разрабатывает и отлаживает прикладные решения разного уровня сложности и для широкого круга конечных пользователей с использованием JVM-совместимых языков программирования, тестирует, испытывает и оценивает качество таких решений.\newline
+\textbf{PL-2.2.} Разрабатывает и поддерживает системы обработки больших данных различной степени сложности &
+PL-2.1: применяет основные библиотеки для решения рутинных задач в серверном программировании: ввод-вывод, применение простейших примитивов многопоточного программирования, интеграция с базами данных.\newline
+PL-2.2: разрабатывает и поддерживает простые ETL алгоритмы в пайплайнах обработки данных \\
+\midrule
+\textbf{LLM-5 Промпт-инженерия} &
+Организует взаимодействие с генеративными моделями через проектирование, анализ и применение промптов &
+\textbf{LLM-5.1.} Использует базовые шаблоны промптов.\newline
+\textbf{LLM-5.2.} Встраивает промпты в пайплайн взаимодействия &
+LLM-5.1: знает концепцию промпта. Умеет составлять и структурировать промпт.\newline
+LLM-5.2: использует простые последовательности промптов \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+% \footnotesize\textbf{Формулировки компетенций и индикаторов приведены в соответствии с КРМ.}
+\end{frame}
+
+\begin{frame}{Планируемые результаты обучения}
+\small
+По завершении дисциплины студент способен:
+\begin{itemize}
+  \item проектировать объектно-ориентированные модели предметной области и реализовывать их на Java;
+  \item использовать коллекции, generics, исключения, файловый ввод-вывод и библиотеки для обработки структурированных данных;
+  \item реализовывать конкурентную обработку данных с использованием базовых примитивов многопоточности;
+  \item подключаться к реляционной БД через JDBC, выполнять CRUD-операции, транзакции, batch insert и UPSERT;
+  \item проектировать и реализовывать простой ETL-пайплайн с логированием, метриками, обработкой ошибок и идемпотентностью;
+  \item составлять структурированные промпты и цепочки промптов, а также проводить code review кода, сгенерированного GigaChat.
+\end{itemize}
+\end{frame}
+
+
+% ---------- Structure slides ----------
+\begin{frame}{Структура и тематический план дисциплины: блоки 1--2}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.84\textheight,center}
+\begin{tabular}{L{4.6cm} L{6.3cm} L{1.8cm} C{0.7cm} C{1.0cm} C{1.1cm} C{0.5cm}}
+\toprule
+\textbf{Элемент дисциплины} & \textbf{Содержание} & \textbf{Форма занятия} & \textbf{Объем, а.ч.} & \textbf{Компет.} & \textbf{Индикатор} & \textbf{Ур.} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 1. Основы ООП — 10 ч.}}\\
+1.1 Введение в ООП. Классы, объекты, инкапсуляция & Парадигмы программирования; классы и объекты; поля, методы, конструкторы; инкапсуляция; модификаторы доступа; \texttt{this}; классы-обёртки. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+1.2 Настройка окружения. Первый класс & JDK, IntelliJ IDEA, Git; класс \texttt{Book}; поля, getter/setter; метод \texttt{getDescription}; запуск в \texttt{main}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+1.3 Конструкторы, перегрузка, static & Перегрузка конструкторов и методов; \texttt{this(...)}; статические поля и методы; фабричный метод. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+1.4 Наследование, полиморфизм, абстрактные классы и интерфейсы & \texttt{extends}; переопределение; dynamic dispatch; абстрактные классы; интерфейсы; \texttt{final}. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+1.5 Наследование и полиморфизм & Иерархия \texttt{Employee}; переопределение \texttt{toString}; массив базового типа; интерфейс \texttt{Reportable}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 2. Коллекции, обобщения и исключения — 8 ч.}}\\
+2.1 Коллекции, Generics, исключения & \texttt{Collection}, \texttt{List}, \texttt{Set}, \texttt{Map}; сложность операций; итерация; обобщения; checked/unchecked исключения; try-with-resources. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+2.2 Коллекции: List, Set, Map & Сортировка и фильтрация; \texttt{equals/hashCode}; группировка по автору; Stream API; сравнение поиска в \texttt{ArrayList}/\texttt{HashSet}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+2.3 Generics: универсальные структуры данных & \texttt{Pair<A,B>}; обобщённый \texttt{swap}; ограничения \texttt{Comparable}; \texttt{Repository<T>}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+2.4 Исключения и логирование & Пользовательские исключения; валидация данных; SLF4J + Logback; уровни INFO/WARN/ERROR; запись лога в файл. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}{Структура и тематический план дисциплины: блоки 3--5}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.84\textheight,center}
+\begin{tabular}{L{5.0cm} L{7.3cm} L{1.8cm} C{0.7cm} C{1.0cm} C{1.1cm} C{0.5cm}}
+\toprule
+\textbf{Элемент дисциплины} & \textbf{Содержание} & \textbf{Форма занятия} & \textbf{Объем, а.ч.} & \textbf{Компет.} & \textbf{Индикатор} & \textbf{Ур.} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 3. Ввод-вывод — 6 ч.}}\\
+3.1 Ввод-вывод в Java & Байтовые и символьные потоки; чтение/запись файлов; \texttt{Scanner}; сериализация; \texttt{java.nio.file}; кодировки. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+3.2 Файловый ввод-вывод: чтение CSV & Парсинг CSV с кавычками; обработка некорректных строк; статистика; дубликаты ISBN; запись \texttt{books\_clean.csv}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+3.3 Файловый ввод-вывод: JSON и XML & Jackson; чтение/запись JSON; конвертер CSV→JSON; XML через \texttt{XmlMapper}; форматирование дат. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 4. Многопоточность — 6 ч.}}\\
+4.1 Многопоточное программирование: базовые примитивы & Процесс и поток; \texttt{Thread/Runnable}; состояния потока; race condition; \texttt{synchronized}; \texttt{volatile}; \texttt{ExecutorService}, \texttt{Future}, \texttt{CountDownLatch}. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+4.2 Многопоточность: Runnable, Thread, synchronized & Банковский счёт; 10 потоков; демонстрация гонки данных; \texttt{synchronized}; \texttt{ReentrantLock}; сравнение производительности. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+4.3 Многопоточность: ExecutorService и Future & Параллельная загрузка 5 CSV-файлов; \texttt{Callable<List<Book>>}; \texttt{Future.get}; таймауты; удаление дубликатов. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 5. Базы данных и JDBC — 6 ч.}}\\
+5.1 Работа с базами данных: JDBC & JDBC API; \texttt{Connection}, \texttt{Statement}, \texttt{ResultSet}; \texttt{PreparedStatement}; транзакции; HikariCP; DAO. & Занятие лекционного типа & 2 & PL-2 & PL-2.1 & Б\\
+5.2 JDBC: подключение к БД и CRUD & PostgreSQL; таблица \texttt{books}; insert/select/update/delete; batch insert; \texttt{try-with-resources}; \texttt{BookDao}. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+5.3 JDBC: транзакции и пакетная обработка & Транзакционное переназначение книг; rollback; пакетная вставка 10000 записей; UPSERT; HikariCP. & Лабораторное занятие & 2 & PL-2 & PL-2.1 & Б\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}{Структура и тематический план дисциплины: блоки 6--7}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.84\textheight,center}
+\begin{tabular}{L{5.0cm} L{6.5cm} L{1.8cm} C{0.7cm} C{1.0cm} C{1.1cm} C{0.5cm}}
+\toprule
+\textbf{Элемент дисциплины} & \textbf{Содержание} & \textbf{Форма занятия} & \textbf{Объем, а.ч.} & \textbf{Компет.} & \textbf{Индикатор} & \textbf{Ур.} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 6. ETL-пайплайн — 6 ч.}}\\
+6.1 ETL: проектирование и реализация пайплайнов обработки данных & Понятие ETL; Extract/Transform/Load; источники CSV/JSON/XML/БД/API; идемпотентность; обработка ошибок; логирование и мониторинг. & Занятие лекционного типа & 2 & PL-2 & PL-2.2 & Б\\
+6.2 ETL-пайплайн: Extract + Transform & Универсальный \texttt{DataSourceReader}; чтение CSV/JSON; нормализация автора; фильтрация ISBN; обогащение категорией. & Лабораторное занятие & 2 & PL-2 & PL-2.2 & Б\\
+6.3 ETL-пайплайн: Load + мониторинг & Загрузка в PostgreSQL; UPSERT; \texttt{BookEtlPipeline}; метрики \texttt{EtlResult}; dead-letter queue; проверка идемпотентности. & Лабораторное занятие & 2 & PL-2 & PL-2.2 & Б\\
+\midrule
+\multicolumn{7}{l}{\textbf{Блок 7. Промпт-инжиниринг — 8 ч.}}\\
+7.1 Промпт-инжиниринг и ИИ-инструменты в разработке & Понятие промпта; роль/контекст/задача/формат/ограничения/примеры; prompt chaining; ограничения ИИ; GigaChat как базовая LLM курса. & Занятие лекционного типа & 2 & LLM-5 & LLM-5.1 & Б\\
+7.2 Составление и структурирование промптов & Промпт для класса \texttt{Order}; цепочка промптов для REST-клиента; code review фрагментов, сгенерированных GigaChat. & Лабораторное занятие & 2 & LLM-5 & LLM-5.1 & Б\\
+7.3 Мини-проект: проектирование и начало реализации & Сервис загрузки и очистки прайс-листов; CSV/JSON; нормализация валют; обогащение; БД; конкурентная загрузка; проектирование с помощью GigaChat. & Лабораторное занятие & 2 & LLM-5 & LLM-5.2 & Б\\
+7.4 Мини-проект: реализация, тестирование и защита & Интеграция модулей; сквозное тестирование; README; документированные промпты; демонстрация результатов в БД; ретроспектива применения GigaChat. & Лабораторное занятие & 2 & LLM-5 & LLM-5.2 & Б\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}{Структура и тематический план дисциплины: контроль}
+\small
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.68\textheight,center}
+\begin{tabular}{L{4.5cm} L{6.0cm} L{3.0cm} C{1.0cm} C{1.0cm} C{1.8cm} C{0.7cm}}
+\toprule
+\textbf{Элемент дисциплины} & \textbf{Содержание} & \textbf{Форма занятия} & \textbf{Объем, а.ч.} & \textbf{Компет.} & \textbf{Индикатор} & \textbf{Ур.} \\
+\midrule
+\textbf{Контроль: курсовая работа} & Командный проект: Java-приложение для загрузки и очистки прайс-листов; ETL, JDBC, многопоточность, README, Git, документированные промпты GigaChat; защита архитектурных решений. & Самостоятельная работа / защита & 12 & PL-2, LLM-5 & PL-2.1/2.2, LLM-5.2 & Б\\
+\midrule
+\textbf{Контроль: экзамен} & Проверка теоретических основ и прикладных решений: ООП, коллекции, исключения, I/O, многопоточность, JDBC, ETL, структура промптов и критическая оценка кода, сгенерированного LLM. & Промежуточная аттестация & 44,35 & PL-2, LLM-5 & PL-2.1/2.2, LLM-5.1/5.2 & Б\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\smallgap
+% \footnotesize Таблица разнесена на несколько слайдов для сохранения рекомендованной структуры: элемент, содержание, форма занятия, объём, компетенция, индикатор, уровень.
+\end{frame}
+
+\begin{frame}{Содержание лабораторных работ}
+\small
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.49\textwidth}
+\textbf{Индивидуальные лабораторные}
+\begin{itemize}
+  \item ООП-ядро: классы, конструкторы, наследование, интерфейсы.
+  \item Коллекции, generics, исключения, логирование.
+  \item Файловый ввод-вывод: CSV, JSON, XML, Jackson.
+  \item Многопоточность: \texttt{synchronized}, \texttt{ReentrantLock}, \texttt{ExecutorService}, \texttt{Future}.
+  \item JDBC: CRUD, DAO, транзакции, batch insert, UPSERT, HikariCP.
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Интеграционные работы}
+\begin{itemize}
+  \item ETL-пайплайн: Extract + Transform + Load.
+  \item Метрики, обработка ошибок, dead-letter queue, идемпотентность.
+  \item Промпт-инжиниринг: шаблоны, цепочки промптов, code review ИИ-кода.
+  \item Базовая LLM для работ по промптингу: \textbf{GigaChat}.
+  \item Мини-проект: сервис загрузки и очистки прайс-листов с БД и конкурентной обработкой.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Паспорт дисциплины и трудоёмкость работ}
+\scriptsize
+\begin{adjustbox}{max width=\textwidth,max totalheight=0.83\textheight,center}
+\begin{tabular}{L{9.6cm} C{2.1cm} L{3.8cm}}
+\toprule
+\textbf{Вид работы / параметр} & \textbf{Объём, ч.} & \textbf{Комментарий} \\
+\midrule
+Семестр & 4 &  \\
+Контактная работа, всего & 50,65 &  \\
+\quad Аудиторные занятия & 48 &  \\
+\quad\quad Занятия лекционного типа & 16 & 8 лекций \\
+\quad\quad Лабораторные занятия & 32 & 16 лабораторных \\
+\quad Иная контактная работа & 2,65 &  \\
+\quad\quad Контроль самостоятельной работы & 2 &  \\
+\quad\quad Промежуточная аттестация & 0,65 &  \\
+Самостоятельная работа, в том числе & 49 &  \\
+\quad Курсовая работа & 12 &  \\
+\quad Выполнение индивидуальных заданий & 37 &  \\
+Контроль & 44,35 &  \\
+\quad Подготовка к экзамену & 44,35 &  \\
+\midrule
+\textbf{Общая трудоёмкость} & \textbf{144} & \textbf{4 зачётные единицы} \\
+\textbf{Форма контроля} & -- & \textbf{экзамен, курсовой проект} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{frame}
+
+\begin{frame}{ФОС: экзамен и курсовой проект}
+\small
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.52\textwidth}
+\textbf{Вопросы к экзамену — укрупнённые блоки}
+\begin{itemize}
+  \item ООП: инкапсуляция, наследование, полиморфизм, интерфейсы.
+  \item Коллекции, generics, исключения, логирование.
+  \item Java I/O: \texttt{java.io}, \texttt{java.nio}, CSV/JSON/XML.
+  \item Многопоточность и конкурентный доступ.
+  \item JDBC: CRUD, транзакции, пулы соединений, DAO.
+  \item ETL-пайплайны и промпт-инжиниринг в GigaChat.
+\end{itemize}
+\end{column}
+\begin{column}{0.44\textwidth}
+\textbf{Курсовой проект}
+\begin{itemize}
+  \item работающий Java-проект;
+  \item входные данные CSV/JSON;
+  \item очистка, нормализация, обогащение;
+  \item загрузка в БД;
+  \item конкурентная обработка;
+  \item README, Git, документированные промпты.
+\end{itemize}
+\end{column}
+\end{columns}
+\smallgap
+\textbf{Идея для защиты:} экзамен проверяет понятийную базу, проект — интегральное применение компетенций.
+\end{frame}
+
+\begin{frame}{Методическое обеспечение, литература и ресурсы}
+\scriptsize
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.34\textwidth}
+\textbf{Методическое обеспечение}
+\begin{itemize}
+  \item задания к лабораторным работам;
+  \item шаблоны README и чек-листы code review;
+  \item тестовые CSV/JSON/XML-наборы;
+  \item инструкции по JDK 17+, IntelliJ IDEA, Git, Maven/Gradle и PostgreSQL;
+  \item инструкции по использованию GigaChat в учебных задачах.
+\end{itemize}
+
+\textbf{Электронные ресурсы}
+\begin{itemize}
+  \item документация Java и Java Collections;
+  \item курс Computer Science Center по Java;
+  \item JavaRush, W3Schools Java.
+\end{itemize}
+\end{column}
+\begin{column}{0.62\textwidth}
+\textbf{Основная и дополнительная литература}
+\begin{enumerate}
+  \item Барков И.~А. \textit{Объектно-ориентированное программирование}. --- Лань, 2023.
+  \item Васильев А.~Н. \textit{Java. Объектно-ориентированное программирование}. --- Питер, 2021.
+  \item Гуськова О.~И. \textit{Объектно ориентированное программирование в Java}. --- МПГУ, 2024.
+  \item Horstmann C.~S. \textit{Core Java. Volume I: Fundamentals}. --- Oracle Press, 2021.
+  \item Харенслак Б., де Рюйтер Ю. \textit{Apache Airflow и конвейеры обработки данных}. --- ДМК Пресс, 2022.
+  \item Шапира Г., Палино Т., Сиварам Р., Петти К. \textit{Apache Kafka. Потоковая обработка и анализ данных}. --- Питер, 2023.
+  \item Лао А. \textit{Когнитивный пайплайн. Часть I}. --- Ridero, 2025.
+  \item Берриман Дж., Циглер А. \textit{Промпт-инжиниринг для LLM}. --- Питер, 2026.
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Оценочная логика и защита результата}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.48\textwidth}
+\textbf{Текущий контроль}
+\begin{itemize}
+  \item лабораторные работы по каждому блоку;
+  \item проверка работоспособности кода и качества архитектурных решений;
+  \item анализ README, Git-репозитория и документированных промптов;
+  \item code review, включая фрагменты, сгенерированные GigaChat.
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{Итоговый результат}
+\begin{itemize}
+  \item командный мини-проект: сервис загрузки и очистки прайс-листов;
+  \item CSV/JSON input, нормализация, обогащение, загрузка в БД;
+  \item конкурентная загрузка нескольких файлов;
+  \item демонстрация, ответы на вопросы, оценка корректности ETL и качества кода.
+\end{itemize}
+\end{column}
+\end{columns}
+\smallgap
+\textbf{Фокус ФОС:} не только знание синтаксиса Java, но и способность собрать работающий инженерный пайплайн, соответствующий ролям КРМ.
+\end{frame}
+
+\begin{frame}{Краткий вывод для экспертов}
+\Large
+\textbf{Обновленная РПД сохраняет ядро ООП, но переводит дисциплину в контекст современной разработки ПО для ИИ-направлений.}
+
+\vspace{1em}
+\normalsize
+\begin{itemize}
+  \item Содержание прямо связано с компетенциями PL-2 и LLM-5.
+  \item Формулировки компетенций и индикаторов приведены в соответствии с КРМ.
+  \item Результаты обучения проверяются через лабораторные работы, экзамен и курсовой проект: ETL + БД + многопоточность + GigaChat.
+\end{itemize}
+\end{frame}
+
+\end{document}
