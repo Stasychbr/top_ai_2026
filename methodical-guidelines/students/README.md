@@ -10,7 +10,7 @@
 | [M4. Многопоточность](../../Modules/M4-Multithreading/README.md) | №9–10 |
 | [M5. Базы данных и JDBC](../../Modules/M5-Databases-and-JDBC/README.md) | №11–12 |
 | [M6. ETL-пайплайн](../../Modules/M6-ETL-Pipeline/README.md) | №13–14 |
-| [M7. Промпт-инжиниринг](../../Modules/M7-Prompt-Engineering/README.md) | №15 |
+| [M7. ИИ-инструменты и мини-проект](../../Modules/M7-Prompt-Engineering/README.md) | №15–16 |
 
 ## Общие правила
 
@@ -34,4 +34,4 @@
 
 ## Мини-проект
 
-Мини-проект находится в каталоге [Project](../../Project/README.md); его условия пока разрабатываются.
+Командный [мини-проект №16](../../Project/README.md) объединяет конкурентную обработку CSV/JSON, ETL, PostgreSQL, HTTP API и проверяемую работу с ИИ-агентом. До начала ознакомьтесь также с [проектной рубрикой](../teachers-assessment/project.md).
