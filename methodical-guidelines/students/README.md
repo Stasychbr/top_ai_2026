@@ -4,13 +4,13 @@
 
 | Модуль | Лабораторные работы |
 |---|---|
-| [M1. Основы ООП](../../M1-Fundamentals-of-OOP/README.md) | №1–3 |
-| [M2. Коллекции, generics и исключения](../../M2-Collections-Generics-Exceptions/README.md) | №4–6 |
-| [M3. Ввод-вывод](../../M3-Input-Output/README.md) | №7–8 |
-| [M4. Многопоточность](../../M4-Multithreading/README.md) | №9–10 |
-| [M5. Базы данных и JDBC](../../M5-Databases-and-JDBC/README.md) | №11–12 |
-| [M6. ETL-пайплайн](../../M6-ETL-Pipeline/README.md) | №13–14 |
-| [M7. Промпт-инжиниринг](../../M7-Prompt-Engineering/README.md) | №15 |
+| [M1. Основы ООП](../../Modules/M1-Fundamentals-of-OOP/README.md) | №1–3 |
+| [M2. Коллекции, generics и исключения](../../Modules/M2-Collections-Generics-Exceptions/README.md) | №4–6 |
+| [M3. Ввод-вывод](../../Modules/M3-Input-Output/README.md) | №7–8 |
+| [M4. Многопоточность](../../Modules/M4-Multithreading/README.md) | №9–10 |
+| [M5. Базы данных и JDBC](../../Modules/M5-Databases-and-JDBC/README.md) | №11–12 |
+| [M6. ETL-пайплайн](../../Modules/M6-ETL-Pipeline/README.md) | №13–14 |
+| [M7. Промпт-инжиниринг](../../Modules/M7-Prompt-Engineering/README.md) | №15 |
 
 ## Общие правила
 
@@ -22,4 +22,4 @@
 
 ## Мини-проект
 
-Текущие черновики [части 1](Lab16.md) и [части 2](Lab17.md) сохранены без изменений. Условия мини-проекта будут переработаны отдельно.
+Мини-проект находится в каталоге [Project](../../Project/README.md); его условия пока разрабатываются.
