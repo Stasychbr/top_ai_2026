@@ -3,6 +3,8 @@
 **Элемент РПД:** 6.2  
 **Индикаторы:** PL-2.2, LLM-5.1, LLM-5.2
 
+[<kbd>← Предыдущая работа</kbd>](../M5-Databases-and-JDBC/kim-02-jdbc-transactions-batch.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-13.md) · [<kbd>Следующая работа →</kbd>](kim-02-etl-load-monitoring.md)
+
 ## Вариант задания
 
 Источники, правила нормализации, фильтрации и обогащения определяются [вариантом лабораторной №13](../../methodical-guidelines/teachers-resources/lab13_V.md). Используйте прежний номер варианта.

@@ -3,6 +3,8 @@
 **Элемент РПД:** 1.5  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](kim-02-constructors-overloading-static.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-03.md) · [<kbd>Следующая работа →</kbd>](../M2-Collections-Generics-Exceptions/kim-01-collections.md)
+
 ## Вариант задания
 
 Используйте иерархию, свойства и предметные операции из [варианта лабораторной №3](../../methodical-guidelines/teachers-resources/lab3_V.md). Номер варианта должен совпадать с предыдущими работами.

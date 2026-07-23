@@ -3,6 +3,8 @@
 **Элемент РПД:** 3.2  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](../M2-Collections-Generics-Exceptions/kim-03-exceptions-logging.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-07.md) · [<kbd>Следующая работа →</kbd>](kim-02-json-xml.md)
+
 ## Вариант задания
 
 Состав полей, уникальный признак, проверки и требуемая статистика определяются [вариантом лабораторной №7](../../methodical-guidelines/teachers-resources/lab7_V.md). Используйте прежний номер варианта.

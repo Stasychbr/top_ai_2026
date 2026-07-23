@@ -3,6 +3,8 @@
 **Элемент РПД:** 3.3  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](kim-01-csv.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-08.md) · [<kbd>Следующая работа →</kbd>](../M4-Multithreading/kim-01-thread-synchronization.md)
+
 ## Вариант задания
 
 Формат предметных данных, дополнительные поля и операции преобразования приведены в [варианте лабораторной №8](../../methodical-guidelines/teachers-resources/lab8_V.md). Номер варианта сохраняется.

@@ -3,6 +3,8 @@
 **Элемент РПД:** 2.4  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](kim-02-generics.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-06.md) · [<kbd>Следующая работа →</kbd>](../M3-Input-Output/kim-01-csv.md)
+
 ## Вариант задания
 
 Используйте типы ошибок, правила валидации и предметные операции из [варианта лабораторной №6](../../methodical-guidelines/teachers-resources/lab6_V.md). Имена исключений адаптируйте к своей предметной области.

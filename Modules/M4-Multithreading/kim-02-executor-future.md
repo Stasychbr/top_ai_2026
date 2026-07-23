@@ -3,6 +3,8 @@
 **Элемент РПД:** 4.3  
 **Индикаторы:** PL-2.1, LLM-5.1, LLM-5.2
 
+[<kbd>← Предыдущая работа</kbd>](kim-01-thread-synchronization.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-10.md) · [<kbd>Следующая работа →</kbd>](../M5-Databases-and-JDBC/kim-01-jdbc-crud.md)
+
 ## Вариант задания
 
 Тип загружаемых данных, уникальный признак и дополнительные операции определяются [вариантом лабораторной №10](../../methodical-guidelines/teachers-resources/lab10_V.md). Номер варианта сохраняется.

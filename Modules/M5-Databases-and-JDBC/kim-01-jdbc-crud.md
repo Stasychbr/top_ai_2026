@@ -3,6 +3,8 @@
 **Элемент РПД:** 5.2  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](../M4-Multithreading/kim-02-executor-future.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-11.md) · [<kbd>Следующая работа →</kbd>](kim-02-jdbc-transactions-batch.md)
+
 ## Вариант задания
 
 Имя таблицы, предметная сущность, ограничения и дополнительные запросы возьмите из [варианта лабораторной №11](../../methodical-guidelines/teachers-resources/lab11_V.md). Номер варианта сохраняется.

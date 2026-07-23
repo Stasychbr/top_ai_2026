@@ -8,6 +8,8 @@
 
 **Индикаторы:** PL-2.1, PL-2.2, LLM-5.1, LLM-5.2
 
+[<kbd>← Предыдущая работа</kbd>](../Modules/M7-Prompt-Engineering/kim-01-prompt-engineering.md) · [<kbd>README модуля</kbd>](../Modules/M7-Prompt-Engineering/README.md) · [<kbd>Рубрика</kbd>](../methodical-guidelines/teachers-assessment/project.md) · [<kbd>К списку работ →</kbd>](../Modules/README.md)
+
 ## Цель
 
 Собрать изученные средства Java в одно серверное приложение: получить грязные данные из нескольких источников, выполнить конкурентный ETL, сохранить очищенный результат в PostgreSQL и предоставить доступ к импорту и данным через небольшой HTTP API. ИИ-агент используется для ограниченных задач, а команда проверяет каждый полученный артефакт.

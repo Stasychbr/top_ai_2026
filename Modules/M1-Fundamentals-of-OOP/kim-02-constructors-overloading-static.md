@@ -3,6 +3,8 @@
 **Элемент РПД:** 1.3  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](kim-01-first-class.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-02.md) · [<kbd>Следующая работа →</kbd>](kim-03-inheritance-polymorphism.md)
+
 ## Вариант задания
 
 Продолжайте работу с предметной областью и номером варианта из лабораторной №1. Требуемые для этой работы виды объектов и правила их создания приведены в [перечне вариантов](../../methodical-guidelines/teachers-resources/lab2_V.md).

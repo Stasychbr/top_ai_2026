@@ -3,6 +3,8 @@
 **Элемент РПД:** 5.3  
 **Индикаторы:** PL-2.1, LLM-5.1, LLM-5.2
 
+[<kbd>← Предыдущая работа</kbd>](kim-01-jdbc-crud.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-12.md) · [<kbd>Следующая работа →</kbd>](../M6-ETL-Pipeline/kim-01-etl-extract-transform.md)
+
 ## Вариант задания
 
 Транзакционная операция, конфликт уникальности и предметные данные задаются [вариантом лабораторной №12](../../methodical-guidelines/teachers-resources/lab12_V.md). Используйте прежний номер варианта.

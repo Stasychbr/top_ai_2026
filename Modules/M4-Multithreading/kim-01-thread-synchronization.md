@@ -3,6 +3,8 @@
 **Элемент РПД:** 4.2  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](../M3-Input-Output/kim-02-json-xml.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-09.md) · [<kbd>Следующая работа →</kbd>](kim-02-executor-future.md)
+
 ## Вариант задания
 
 Общий изменяемый ресурс, конкурентные операции и допустимые инварианты задаются [вариантом лабораторной №9](../../methodical-guidelines/teachers-resources/lab9_V.md). Используйте прежний номер варианта.

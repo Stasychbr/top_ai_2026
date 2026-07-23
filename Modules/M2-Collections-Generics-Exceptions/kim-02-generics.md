@@ -3,6 +3,8 @@
 **Элемент РПД:** 2.3  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← Предыдущая работа</kbd>](kim-01-collections.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-05.md) · [<kbd>Следующая работа →</kbd>](kim-03-exceptions-logging.md)
+
 ## Вариант задания
 
 Основную сущность и предметные примеры выберите по [варианту лабораторной №5](../../methodical-guidelines/teachers-resources/lab5_V.md). Номер варианта должен совпадать с предыдущими работами.

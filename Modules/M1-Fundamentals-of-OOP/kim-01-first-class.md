@@ -3,6 +3,8 @@
 **Элемент РПД:** 1.2  
 **Индикаторы:** PL-2.1, LLM-5.1
 
+[<kbd>← К списку работ</kbd>](../README.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-01.md) · [<kbd>Следующая работа →</kbd>](kim-02-constructors-overloading-static.md)
+
 ## Вариант задания
 
 Используйте номер варианта, назначенный преподавателем. Предметная область, имя класса и обязательные поля приведены в [перечне вариантов](../../methodical-guidelines/teachers-resources/lab1_V.md). Во всех последующих лабораторных работах сохраняйте тот же номер варианта.

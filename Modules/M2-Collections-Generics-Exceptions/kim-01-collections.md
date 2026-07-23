@@ -3,6 +3,8 @@
 **Элемент РПД:** 2.2  
 **Индикаторы:** PL-2.1, LLM-5.1, LLM-5.2
 
+[<kbd>← Предыдущая работа</kbd>](../M1-Fundamentals-of-OOP/kim-03-inheritance-polymorphism.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-04.md) · [<kbd>Следующая работа →</kbd>](kim-02-generics.md)
+
 ## Вариант задания
 
 Используйте сущность, поля, способы группировки и предметные операции из [варианта лабораторной №4](../../methodical-guidelines/teachers-resources/lab4_V.md). Номер варианта сохраняется с начала курса.
