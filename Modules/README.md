@@ -1,6 +1,6 @@
 # Лабораторные работы
 
-Первые 15 индивидуальных работ используют одну назначенную предметную область. Модель постепенно получает коллекционные операции, файловые представления, конкурентную обработку, хранение в PostgreSQL и ETL-пайплайн. Командный мини-проект №16 переносит эти навыки в единый серверный сценарий обработки прайс-листов.
+Первые 15 индивидуальных работ используют одну назначенную предметную область. Модель постепенно получает коллекционные операции, файловые представления, конкурентную обработку, хранение в PostgreSQL и ETL-пайплайн. Для командного мини-проекта №16 участники выбирают один из своих вариантов и переносят эти навыки в единый серверный ETL-сервис.
 
 ## Как читать материалы
 
@@ -27,4 +27,4 @@
 | 13 | [M6](M6-ETL-Pipeline/README.md) | Extract + Transform | [условие](M6-ETL-Pipeline/kim-01-etl-extract-transform.md) | [оценивание](../methodical-guidelines/teachers-assessment/lab-13.md) | [варианты](../methodical-guidelines/teachers-resources/lab13_V.md) | [генерация кода](../resources/llm-prompts/code-generation-and-review.md), [цепочки](../resources/llm-prompts/prompt-chains.md) |
 | 14 | [M6](M6-ETL-Pipeline/README.md) | Load + мониторинг | [условие](M6-ETL-Pipeline/kim-02-etl-load-monitoring.md) | [оценивание](../methodical-guidelines/teachers-assessment/lab-14.md) | [варианты](../methodical-guidelines/teachers-resources/lab14_V.md) | [данные](../resources/llm-prompts/data-generation.md), [цепочки](../resources/llm-prompts/prompt-chains.md) |
 | 15 | [M7](M7-Prompt-Engineering/README.md) | Структурированные промпты | [условие](M7-Prompt-Engineering/kim-01-prompt-engineering.md) | [оценивание](../methodical-guidelines/teachers-assessment/lab-15.md) | [сквозная область](../methodical-guidelines/teachers-resources/README.md) | [структура](../resources/llm-prompts/README.md), [цепочки](../resources/llm-prompts/prompt-chains.md) |
-| 16 | [M7](M7-Prompt-Engineering/README.md) | Командный мини-проект | [условие](../Project/README.md) | [оценивание](../methodical-guidelines/teachers-assessment/project.md) | единый прайс-лист | [данные](../resources/llm-prompts/data-generation.md), [тестирование](../resources/llm-prompts/testing-and-debugging.md), [цепочки](../resources/llm-prompts/prompt-chains.md) |
+| 16 | [M7](M7-Prompt-Engineering/README.md) | Командный мини-проект | [условие](../Project/README.md) | [оценивание](../methodical-guidelines/teachers-assessment/project.md) | один из вариантов участников | [fixtures](../resources/datasets/README.md), [генерация данных](../resources/llm-prompts/data-generation.md), [тестирование](../resources/llm-prompts/testing-and-debugging.md), [цепочки](../resources/llm-prompts/prompt-chains.md) |
