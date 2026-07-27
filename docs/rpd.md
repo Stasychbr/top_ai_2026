@@ -90,7 +90,7 @@
 | Занятие 7.2. ETL-пайплайн: Extract + Transform |  | Лаб | 2 | PL-2 <br> LLM-5 | 2.2 <br> 5.1 <br> 5.2 | Б <br> Б <br> Б | [модуль](../Modules/M6-ETL-Pipeline/README.md) |
 | Занятие 7.3. ETL-пайплайн: Load + мониторинг |  | Лаб | 2 | PL-2 <br> LLM-5 | 2.2 <br> 5.1 <br> 5.2 | Б <br> Б <br> Б | [модуль](../Modules/M6-ETL-Pipeline/README.md) |
 | Модуль 8. ИИ-инструменты и интеграционный проект | - | - | 4 | PL-2 <br> LLM-5 | 2.2 <br> 5.1 <br> 5.2 | Б <br> Б <br> Б | [модуль](../methodical-guidelines/teachers-assessment/project.md) |
-| Занятие 8.1. Командный мини-проект: серверный ETL-сервис выбранной предметной области | проверяемая постановка задач, prompt chaining, agent workflows, code review, серверный ETL-мини-проект | Проект | 4 | PL-2 <br> LLM-5 | 2.1 <br> 2.2 <br> 5.1 <br> 5.2 | C <br> C <br> C <br> C | [модуль](../methodical-guidelines/teachers-assessment/project.md) |
+| Занятие 8.1. Командный мини-проект: серверный ETL-сервис выбранной предметной области | проверяемая постановка задач, prompt chaining, agent workflows, code review, серверный ETL-мини-проект | Проект | 4 | PL-2 <br> LLM-5 | 2.1 <br> 2.2 <br> 5.1 <br> 5.2 | C <br> Б <br> C <br> Б | [модуль](../methodical-guidelines/teachers-assessment/project.md) |
 | Экзамен | - | - | - | PL-2 <br> LLM-5 | 2.1 <br> 2.2 <br> 5.1 <br> 5.2 | C <br> Б <br> C <br> Б | [Ресурсы](../Exam/README.md) |
 
 
