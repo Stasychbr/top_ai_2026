@@ -7,4 +7,6 @@
 | №15. Структурирование промптов | 7.2 | LLM-5.1, LLM-5.2 | [КИМ](kim-01-prompt-engineering.md) | [Сквозные предметные области](../../methodical-guidelines/teachers-resources/README.md) | [Рубрика](../../methodical-guidelines/teachers-assessment/lab-15.md) |
 | №16. Мини-проект «Серверный ETL-сервис» | 7.3 | PL-2.1, PL-2.2, LLM-5.1, LLM-5.2 | [КИМ](../../Project/README.md) | один из вариантов участников и [fixtures](../../resources/datasets/README.md) | [Рубрика](../../methodical-guidelines/teachers-assessment/project.md) |
 
+Обязательные части измеряют Б. Явные задания С/П и доказательства по каждому индикатору описаны в КИМ №15–16 и [модели уровней КРМ](../../methodical-guidelines/teachers-assessment/krm-level-model.md).
+
 Отдельный перечень вариантов для работы №15 не создаётся: студент продолжает предметную область, назначенную в работах №1–14. Для мини-проекта №16 команда из 2–3 человек выбирает один из вариантов своих участников и реализует общий серверный ETL-сервис в этой предметной области.
