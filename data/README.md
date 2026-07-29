@@ -15,8 +15,10 @@
 | [`Б1.О.24 ООП 090303.docx`](Б1.О.24%20ООП%20090303.docx) | исходный документ дисциплины |
 | [`Перечень литературы.docx`](Перечень%20литературы.docx) | исходный перечень литературы |
 | [`Предложения по интеграции ИИ в лабораторные работы.docx`](Предложения%20по%20интеграции%20ИИ%20в%20лабораторные%20работы.docx) | предложения по обновлению лабораторных работ |
-| [`presentation.tex`](presentation.tex) | исходный код презентации |
-| [`presentation.pdf`](presentation.pdf) | собранная презентация |
+| [`presentation.tex`](presentation.tex) | исходный код презентации РПД |
+| [`presentation.pdf`](presentation.pdf) | собранная презентация РПД |
+| [`Java_AI_course_defense_final.pptx`](Java_AI_course_defense_final.pptx) | презентация курса |
+| [`Java_AI_course_defense_final.pdf`](Java_AI_course_defense_final.pdf) | собранная презентация курса |
 
 ## КРМ 3.0
 
