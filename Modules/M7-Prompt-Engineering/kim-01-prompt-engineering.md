@@ -1,6 +1,6 @@
 # Лабораторная работа №15. Составление и структурирование промптов
 
-**Элемент РПД:** 7.2  
+**Элемент РПД:** 7.1
 **Индикаторы:** LLM-5.1, LLM-5.2
 
 [<kbd>← Предыдущая работа</kbd>](../M6-ETL-Pipeline/kim-02-etl-load-monitoring.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-15.md) · [<kbd>Следующая работа →</kbd>](../../Project/README.md)
