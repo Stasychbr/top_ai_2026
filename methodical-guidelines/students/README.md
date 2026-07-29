@@ -12,6 +12,20 @@
 | [M6. ETL-пайплайн](../../Modules/M6-ETL-Pipeline/README.md) | №13–14 |
 | [M7. ИИ-инструменты и мини-проект](../../Modules/M7-Prompt-Engineering/README.md) | №15–16 |
 
+## Обезличенные примеры
+
+Примеры показывают техническую форму выполнения первых работ на общей учебной
+сущности `Book`. Они не заменяют КИМ: в сдаваемой работе необходимо сохранить
+назначенный номер варианта и использовать его классы, поля, операции, фильтры и
+правила группировки.
+
+| Работа | Условие | Обезличенный пример |
+|---:|---|---|
+| №1. Первый класс | [КИМ](../../Modules/M1-Fundamentals-of-OOP/kim-01-first-class.md) | [пример](example_lab_1.md) |
+| №2. Конструкторы, перегрузка, `static` | [КИМ](../../Modules/M1-Fundamentals-of-OOP/kim-02-constructors-overloading-static.md) | [пример](example_lab_2.md) |
+| №3. Наследование и полиморфизм | [КИМ](../../Modules/M1-Fundamentals-of-OOP/kim-03-inheritance-polymorphism.md) | [пример](example_lab_3.md) |
+| №4. `List`, `Set`, `Map` | [КИМ](../../Modules/M2-Collections-Generics-Exceptions/kim-01-collections.md) | [пример](example_lab_4.md) |
+
 ## Общие правила
 
 - Номер варианта назначает преподаватель. Один номер и соответствующая предметная область используются во всех работах.

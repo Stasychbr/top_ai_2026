@@ -3,7 +3,7 @@
 **Элемент РПД:** 1.2  
 **Индикаторы:** PL-2.1, LLM-5.1
 
-[<kbd>← К списку работ</kbd>](../README.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-01.md) · [<kbd>Следующая работа →</kbd>](kim-02-constructors-overloading-static.md)
+[<kbd>← К списку работ</kbd>](../README.md) · [<kbd>README модуля</kbd>](README.md) · [<kbd>Обезличенный пример</kbd>](../../methodical-guidelines/students/example_lab_1.md) · [<kbd>Рубрика</kbd>](../../methodical-guidelines/teachers-assessment/lab-01.md) · [<kbd>Следующая работа →</kbd>](kim-02-constructors-overloading-static.md)
 
 ## Вариант задания
 
